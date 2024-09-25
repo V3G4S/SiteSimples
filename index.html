@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/70/70950.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos Simples de HTML e CSS</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: black;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 10px;
+            background-color: gray;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+            width: 150px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        input, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px;
+            background-color: white;
+            color: black;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .galeria{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .galeria img {
+            width: 220px;
+            margin: 5px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="#pagPessoal">Página Pessoal</a>
+        <a href="#pagArtigo">Artigo</a>
+        <a href="#formaCtt">Formulário</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#tabelaPreco">Tabela</a>
+        <a href="#card">Card</a>
+        <a href="#blog">Blog</a>
+    </div>
+
+    <section id="pagPessoal">
+        <h1>Página Pessoal</h1>
+        <img src="https://wendellcarvalho.com.br/wp-content/uploads/2023/07/Saiba-o-que-e-uma-pessoa-temperamental-e-como-esse-comportamento-pode-afetar-diferentes-areas-da-vida.jpg" alt="Minha foto">
+        <p>Nome: Antony Valentim</p>
+        <p>Idade: 17 anos</p>
+        <p>Hobbies: Games & Vôlei</p>
+    </section>
+
+    <section id="pagArtigo">
+        <h1>Artigo</h1>
+        <p>Este é um exemplo de artigo simples.</p>
+        <p><a href="https://www.rbac.org.br/artigos/dengue-e-seus-avancos/">Leia mais</a></p>
+    </section>
+
+    <section id="formaCtt">
+        <h1>Formulário de Contato</h1>
+        <form action="#">
+            <input type="text" placeholder="Seu nome">
+            <input type="email" placeholder="Seu email">
+            <textarea placeholder="Sua mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="galeria">
+        <h1>Galeria de personagens favoritos</h1>
+        <div class="galeria">
+            <img src="https://valorantinfo.gg/wp-content/uploads/2021/10/valorant-astra-player-card.png" alt="Imagem 1">
+            <img src="https://valorantinfo.com/images/br/card-clove-de-valorant_valorant_large_art_78106.webp" alt="Imagem 2">
+            <img src="https://valorantinfo.gg/wp-content/uploads/2021/10/valorant-viper-player-card.jpg" alt="Imagem 3">
+        </div>
+    </section>
+
+    <section id="tabelaPreco">
+        <h1>Tabela de Preços</h1>
+        <table>
+            <tr>
+                <th>Serviço</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Faxina</td>
+                <td>R$ 400/dia</td>
+            </tr>
+            <tr>
+                <td>Babá</td>
+                <td>R$ 150/dia</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="card">
+        <h1>Mercy Card</h1>
+        <div class="card">
+            <img src="https://images.blz-contentstack.com/v3/assets/blt2477dcaf4ebd440c/blt12c536b770bfdcd4/63880edf443fa70e71d4bfcd/mercy-00.jpg" alt="Foto">
+            <h2>Doutora Ziegler</h2>
+            <p>Doutora chefe da Overwatch</p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h1>Blog Simples</h1>
+        <p>Fique atento para atualizações...</p>
+    </section>
+
+</body>
+</html>
